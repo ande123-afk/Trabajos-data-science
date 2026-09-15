@@ -47,7 +47,7 @@ df['country'] = df['country'].fillna('Desconocido')
 # asi que esas filas si las eliminamos.
 df = df.dropna(subset=['date_added', 'rating', 'duration'])
 
-# quitamos filas duplicadas
+# quitamos filas duplicadas 
 df = df.drop_duplicates()
 
 print("\n=== Forma despues de limpieza ===")
